@@ -20,10 +20,10 @@ function TodoInput({ onValue }: Props) {
     <form onSubmit={add}>
       <fieldset>
         <legend>Add todo:</legend>
-        <label>Description:</label>
-        <input type="text" required name="desc" value={todo.desc} onChange={inputChanged} />
-        <label>Date:</label>
-        <input type="date" required name="date" value={todo.date} onChange={inputChanged} />
+        <label htmlFor='desc'>Description:</label>
+        <input id='desc' type="text" required name="desc" value={todo.desc} onChange={inputChanged} />
+        <label htmlFor='date'>Date:</label>
+        <input id='date' type="date" required name="date" value={todo.date} onChange={inputChanged} />
         <button type="submit">Add</button>
       </fieldset>
     </form>
